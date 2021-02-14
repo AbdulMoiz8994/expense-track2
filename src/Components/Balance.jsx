@@ -7,7 +7,7 @@ console.log(transactions)
 
 const maps=transactions.map((transaction) => transaction.amount)
 console.log(maps)
-const reduce=maps.reduce((acc,value) => acc +=value).toFixed(2)
+const reduce=maps.reduce((acc,value) => (acc +=value), 0).toFixed(2)
     return (
         <div>
             <h2>Your Balance</h2>

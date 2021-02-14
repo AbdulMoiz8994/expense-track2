@@ -7,9 +7,9 @@ export const InComeAndExpense = () => {
     console.log(transactions)
     const totoalAmount=transactions.map((amounts) => amounts.amount)
     console.log(totoalAmount)
-    const income=totoalAmount.filter((values) => values > 0).reduce((acc,value) => acc +=value).toFixed(2)
+    const income=totoalAmount.filter((values) => values > 0).reduce((acc,value) => (acc +=value),0).toFixed(2)
     console.log(income)
-    const expense=totoalAmount.filter((nub) => nub < 0).reduce((acc,value) => acc += value).toFixed(2)
+    const expense=totoalAmount.filter((nub) => nub < 0).reduce((acc,value) => (acc += value),0).toFixed(2)
  console.log(expense)
 
     return (

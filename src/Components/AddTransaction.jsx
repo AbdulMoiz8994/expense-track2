@@ -20,6 +20,8 @@ function onSubmit(e) {
 
   }
 AddTransaction(AddInput)
+setDesc("");
+setAmount(0)
 }
 
 

@@ -110,7 +110,7 @@ input{
   position: absolute;
   top: 30%;
   line-height: 20px;
-  transform: translate(-1330%, -20%);
+  transform: translate(-1300%, -20%);
 }
 .list li:hover .list-del-btn{
   opacity: 0.9;
